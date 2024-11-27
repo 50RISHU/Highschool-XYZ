@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* nav bar css */
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(102, 170, 167);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0px 50px;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav ul li a:hover{
+    background-color: rgb(53, 68, 70);
+}
+
+#chekckbtn{
+    float: right;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    right: 0;
+}
+@media(max-width:900px){
+    #chekckbtn{
+        display: block;
+    }
+    nav ul{
+        width: 40%;
+        background-color: rgb(102, 170, 167);
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    nav ul li a{
+        color: white;
+    }
+}
+
+/* content css for Staff*/
+.person{
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 15px;
+    width: 45%;
+    display: flex;    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.295);    
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.staffimg{
+    width: 200px;
+}
+#pdetails{
+    margin: 10px;
+}
+@media(max-width:900px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .person{
+        width: 90%;
+        margin: 10px;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    }
+    .staffimg{
+        margin-top: 30px;
+    }
+    #pdetails{
+        position:static;
+    }
+}
+
+/*css for about */
+.school_name{
+    text-align: center;
+}
+.school_details{
+    font-size: 20px;
+}
+
+/* css for contact */
+.contact{
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.295);
+    text-align: center; 
+}
+.contact_person{
+    text-decoration: underline;
+}
+.insta a{
+    text-decoration: none;
+}
+
+/* event page css */
+.event{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.295)
+}
+.event_heading{
+    margin-left: 10px;
+}
+.events{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+.event_details{
+    margin-left: 10px;
+}
+.event_details p{
+    text-align: justify;
+}
+.event_img{
+    width: 250px;
+}
+@media(max-width:900px){
+    .events{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* home page css */
+.school{
+    width: 100%;
+}
+
+/* css for all pages */
+.content{
+    margin-top: 50px;
+}
+.text{
+    text-align: justify;
+    margin: 10px;
+}
+.title{
+    text-align: center;
+    background-color: rgb(223, 253, 255);
+}
+
+/* footer css */
+.foot{
+    text-align: center;
+    background-color: rgb(118, 148, 138);
+    color: white;
+    padding: 10px;
+}
+footer p{
+    background-color: rgb(51, 51, 51);
+    padding: 5px;
+}
